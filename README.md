@@ -6,7 +6,7 @@
 I'm a front end developer.
 
 
-# Temperature COnverter
+# Temperature Converter
 
 This is a web-app built with HTML, CSS and Javascript built for the purpose od precise temperature conversions.
 
