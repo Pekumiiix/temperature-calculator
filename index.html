@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Temperature Calculator</title>
+</head>
+<body>
+    <div class="content">
+        <div class="content-left">
+            <h1 class="head">Enter Temperature</h1>
+            <p class="degree">Degree</p>
+            <div class="input">
+                <input type="number" class="input-1" id="degree" placeholder="Number">
+                <input list="temperatures" id="temperature" name="temperature" placeholder="Deg">
+                <datalist id="temperatures">
+                    <option value="℃">
+                    <option value="℉">
+                    <option value="K">
+                </datalist>
+            </div>
+            <p class="conv">Convert To</p>
+            <div class="input">
+                <input list="conversions" id="conversion" name="conversion" placeholder="Degree">
+                <datalist id="conversions">
+                    <option value="Celcius (℃)">
+                    <option value="Farenheit (℉)">
+                    <option value="Kelvin (K)">
+                </datalist>
+            </div>
+            <button type="submit" onclick="solve()">Convert</button>
+        </div>
+        <div class="content-right">
+            <p id="answer">0</p>
+        </div>
+    </div>
+</body>
+</html>
